@@ -1,0 +1,179 @@
+body{
+    height: 100vh;
+    background-color: #87CBB9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px red; */
+    width: 40%;
+    height: 10%;
+}
+button{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.6rem;
+    
+
+}
+button:hover{
+    font-size: 1.7rem;
+}
+button:active{
+    font-size: 1.5rem;
+}
+.rock{
+    border: solid 3px #569DAA;
+    border-radius: 10px 0;
+    background-color: beige;
+   
+}
+.paper{
+    border: solid 3px #569DAA;
+    border-radius: 10px 0;
+    background-color: #B9EDDD;
+}
+.scissor{
+    border: solid 3px #569DAA;
+    border-radius: 10px 0;
+    background-color: #cde7ed;
+}
+.text{
+    padding: 20px;
+    /* border: solid 2px black; */
+    color: #577D86;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+span{
+    color:#bae9f1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.score{
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.6rem;
+    color: #F5F3C1;
+}
+.choice{
+    position: relative;
+    /* border: blue solid 2px; */
+    width: 90%;
+    left: 5%;
+}
+.scoreboard{
+    position: absolute;
+    top:20px;
+    right: 5%;
+    width: 20%;
+    height: 15%;
+    border: #F0F0F0 solid 2px;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 15px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #157161;
+    opacity: 0.8;
+    box-shadow: 10px 10px 8px #888888 ;
+}
+.usrscr{
+    position: absolute;
+    left: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+.cptscr{
+    position: absolute;
+    right: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    padding-top: 5px;
+    padding-right: 3px;
+}
+@media screen and (max-width: 694px) {
+    body {
+      /* background-color: lightgreen; */
+    }
+    .scoreboard{
+        position: absolute;
+        top:20px;
+        right: 30%;
+        width: 30%;
+        height: 15%;
+        border: #F0F0F0 solid 2px;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #157161;
+        opacity: 0.8;
+        box-shadow: 10px 10px 8px #888888 ;
+        margin-bottom: 200px;
+    }
+
+    .cont{
+        /* border: red solid 2px; */
+        position: relative;
+        top: 60px;
+    }
+    .choice{
+        /* border: rgb(149, 255, 0) solid 2px; */
+        position: relative;
+        top: 60px;
+        width: 180%;
+
+    }
+    .score{
+        /* border: rgb(153, 0, 255) solid 2px; */
+        position: relative;
+        top: 60px;
+        width: 200%;
+    }
+  }
+  @media screen and (max-width: 513px){
+    body {
+        /* background-color: blue; */
+      }
+      .scoreboard{
+        position: absolute;
+        top:20px;
+        right: 30%;
+        width: 30%;
+        height: 15%;
+        border: #F0F0F0 solid 2px;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #157161;
+        opacity: 0.8;
+        box-shadow: 10px 10px 8px #888888 ;
+        margin-bottom: 200px;
+        font-size: 0.9rem;
+
+  }
+  .choice{
+    /* border: rgb(149, 255, 0) solid 2px; */
+    position: relative;
+    top: 60px;
+    width: 180%;
+    right: 200px;
+
+}
+}
